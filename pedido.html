@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selecciona las opciones de tu pedido</h1>
+    <form action="pedido.js"></form>
+
+    <label for="Nombre">Por fabor ingresa tu nombre</label>
+    <br>
+    <input type="text"id="Nombre" placeholder="Nombre">
+    <br><br>
+
+    <label for="mesa">Indica el número de mesa, si no lo sabes es la indicada abajo</label>
+    <br>
+    <input type="number"id="mesa" placeholder="4">
+    <br><br>
+
+    <p>¿Para comer aquí o para llevar?</p>
+    <!-- Al usar un botón Radio y que solo se pueda seleccionar una opción, todos deben tener el mismo name -->
+    <input type="radio" id="aqui" name="aquiollevar" value="Aquí">
+    <label for="aqui">Aquí</label><br>
+    
+    <input type="radio" id="llevar" name="aquiollevar" value="Llevar">
+    <label for="llevar">Llevar</label><br>
+    
+    <!-- SELECCIONAR LOS TACOS Y CANTIDADES -->
+    <p>Seleccione el nombre del taco e indique cuantos quiere por fabor</p>
+   
+    <input type="checkbox" id="mercurio" name="mercurio" value="Mercurio">
+    <label for="mercurio">Mercurio</label><br>
+    <input type="number" id="mercurioCuantos" name="mercurioCuantos"placeholder="¿Cuantos Quiere?">
+    <br>
+    
+    <input type="checkbox" id="venus" name="venus" value="Venus">
+    <label for="venus">Venus</label><br>
+    <input type="number" id="venusCuantos" name="venusCuantos"placeholder="¿Cuantos Quiere?">
+    <br>
+    
+    <input type="checkbox" id="tierra" name="tierra" value="Tierra">
+    <label for="tierra">Tierra</label><br>
+    <input type="number" id="tierraCuantos" name="tierrasCuantos"placeholder="¿Cuantos Quiere?">
+    <br>
+
+    <input type="checkbox" id="marte" name="marte" value="Marte">
+    <label for="marte">Marte</label><br>
+    <input type="number" id="marteCuantos" name="marteCuantos"placeholder="¿Cuantos Quiere?">
+    <br>
+
+    <p>¿Desea Alguna bebida?</p>
+
+    <!-- Menu desplegable para seleccionar -->
+    <select name="refresco" id="resfresco">
+        <option value="SeleccioneBebida">Seleccione su bebida o si no, seleccione: Ninguna</option>
+        <option value="Ninguna">Ninguna</option>
+        <option value="Coca-Cola">Coca-Cola</option>
+        <option value="Sprite">Sprite</option>
+        <option value="Manzana">Manzana</option>
+        <option value="Sangría">Sangría</option>
+        <option value="Mango">Mango</option>
+        <option value="Guayaba">Guayaba</option>
+    </select>
+    <br> <br>
+
+    <input type="reset">
+    <input type="submit">
+    
+    
+
+</body>
+</html>
